@@ -79,7 +79,7 @@ module.exports = function (grunt) {
     grunt.log.ok('All done! :-)');
   }
 
-  grunt.registerMultiTask('versioning', 'Loose managing of your project\'s SemVer', function () {
+  grunt.registerMultiTask('project-version', 'Loose managing of your project\'s SemVer', function () {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       punctuation: '.',

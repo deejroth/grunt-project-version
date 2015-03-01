@@ -1,7 +1,7 @@
 {
   "name": "grunt-versioning",
   "description": "Loose SemVer management for your application.",
-  "version": "0.0.1-alpha",
+  "version": "0.1.0",
   "homepage": "https://github.com/deejroth/grunt-versioning",
   "author": {
     "name": "DeeJRoth",

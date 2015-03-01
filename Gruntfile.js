@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    versioning: {
+    "project-version": {
       options: {
         releaseType: 'alpha'
       },
@@ -74,10 +74,10 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['versioning:default']);
-  grunt.registerTask('major-test', ['versioning:major']);
-  grunt.registerTask('minor-test', ['versioning:minor']);
-  grunt.registerTask('patch-test', ['versioning:patch']);
+  grunt.registerTask('test', ['project-version:default']);
+  grunt.registerTask('major-test', ['project-version:major']);
+  grunt.registerTask('minor-test', ['project-version:minor']);
+  grunt.registerTask('patch-test', ['project-version:patch']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
