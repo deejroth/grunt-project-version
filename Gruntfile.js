@@ -30,11 +30,9 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     "project-version": {
       options: {
-        releaseType: 'alpha'
       },
       default:{
         options: {
-          releaseType: ''
         }
       },
       major: {
